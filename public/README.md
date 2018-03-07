@@ -2,5 +2,6 @@
 <ol>
 <li>npm install</li>
 <li>Install Grunt globally</li>
+ <li>Install Grunt locally</li>
 <li>Grunt</li>
 </ol>
