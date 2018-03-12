@@ -1,1 +1,4 @@
 node_modules/
+.sass-cache/
+style.scss
+style.css.map
