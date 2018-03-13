@@ -13,3 +13,9 @@ function requestPost($key){
 	}
 	return;
 }
+
+function redirect($to)
+{
+    header('Location: ' . $to);
+    die;
+}

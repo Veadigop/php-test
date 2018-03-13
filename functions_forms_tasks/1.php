@@ -12,7 +12,6 @@ function getCommandWords($a, $b){
 	$first_comments = explode(' ', str_replace($symbol_del, '', $a));
 	$last_comments = explode(' ', str_replace($symbol_del, '', $b));
 	
-	
 	// Удаление пустых елементов массива
 	$first_comments = array_filter($first_comments);
 	$last_comments = array_filter($last_comments);
@@ -43,12 +42,11 @@ if($_POST){
 	
 	if($comment1 && $comment2){
 		$results = getCommandWords($comment1, $comment2);
-
+		
 	}
 	else{
 		$message = 'Invalid Value';
-	}
-	
+	}	
 }
 
 ?>
