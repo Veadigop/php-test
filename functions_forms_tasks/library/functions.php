@@ -14,6 +14,15 @@ function requestPost($key){
 	return;
 }
 
+function requestFiles($key)
+{
+    if (isset($_FILES[$key])) {
+        return $_FILES[$key];
+    }
+    
+    return null;
+}
+
 function redirect($to)
 {
     header('Location: ' . $to);

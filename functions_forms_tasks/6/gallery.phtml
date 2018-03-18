@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Create new Gallery</title>
+</head>
+<body>
+
+    <h1>Create Gallery</h1>
+    
+    <form method="post" enctype="multipart/form-data">
+        
+        <input type="file" name="image"> <br>
+        
+        <button type='submit'>Go</button>
+		
+    </form>
+	<div class="gallery-wrapper">
+	<?php if(!empty($result)) :
+		  for($i=0;$i<count($result);$i++) :
+	?>
+		<img src="<?='gallery'.DIRECTORY_SEPARATOR.$result[$i];?>" >
+	<?php endfor;
+		  endif; 
+	?>
+	</div>
+	
+</body>
+</html>
